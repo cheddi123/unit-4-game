@@ -1,0 +1,8 @@
+img{
+    width: 80px;
+    height: 80px;;
+}
+
+body{
+    background-image: url("https://images.unsplash.com/photo-1478207820126-2b0217b53ed1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=55f95b73312696b9c0ebf968dccf81a4&auto=format&fit=crop&w=634&q=80")
+}
