@@ -1,41 +1,62 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector Game</title>
-     <!-- Added link to the jQuery Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- Added link to the Bootstrap -->
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added link to the Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <div class="jumbotron text-center"><h1>Crystal Collector</h1></div>
-    
-    
-    <div class="container">
-     <h3 >RandomNumber : <span id="computerRanNumber"></span> </h3>
-    <h3>Wins: <span id="totalWins"></span> </h3>
-    <h3>Losses : <span id="totalLosses"></span></h3>
-    <h3>Score : <span id="score"></span></h3>
-    <div class="button btn  ">
-        <button id="button1"  class="btn btn-primary"  >
-            <img src="assets/images/bluegem.png"   class=" img-fluid  img-thumbnail  " alt="Responsive image"> 
-        </button>
-        <button  id="button2"class="btn btn-primary" >
-                <img src="assets/images/redgem.png"   class=" img-fluid  img-thumbnail  " alt="Responsive image"> 
-        </button>
-        <button id="button3" class="btn btn-primary">
-                <img src="assets/images/yellowgem.png"  class=" img-fluid  img-thumbnail  " alt="Responsive image"> 
-        </button>
-        <button id="button4" class="btn btn-primary">
-                <img src="assets/images/greengem.png"  class=" img-fluid  img-thumbnail  " alt="Responsive image"> 
-        </button>
-    </div>
-    
+    <div class=" container text-center p-2 btn-danger ">
+        <h1>Crystal Collector</h1>
     </div>
 
-<script src="assets/javascript/game.js"></script>
+    <div class="container">
+        <div class=" row">
+            <div class="col-4 btn-success">
+                <h5>You will be given a random number at the game</h5>
+                <h5>There are four crystals below.By clicking on a crystal you will add a specific amount of points to
+                    your total score.</h5>
+                <h5>You will win the game by matching your total score to the random number.You lose the game if your
+                    total score is above the Target number.</h5>
+                <h5>The value of each crystal is hidden until you click on it</h5>
+                <h5>Each time when the game start, the game will change the values of each crystal.</h5>
+            </div>
+      
+            <div class="col-8" >
+                <div class="btn btn-dark">
+                    <h3> TargetNumber : <span id="computerRanNumber"></span> </h3>
+                    <h3>Wins: <span id="totalWins"></span> </h3>
+                    <h3>Losses : <span id="totalLosses"></span></h3>
+                    <h3>Score : <span id="score"></span></h3>
+                </div>
+                <div class="button btn btn-success  ">
+                    <button id="button1" class="btn btn-primary">
+                        <img src="assets/images/bluegem.png" class=" img-fluid  img-thumbnail  " alt="Responsive image">
+                    </button>
+                    <button id="button2" class="btn btn-primary">
+                        <img src="assets/images/redgem.png" class=" img-fluid  img-thumbnail  " alt="Responsive image">
+                    </button>
+                    <button id="button3" class="btn btn-primary">
+                        <img src="assets/images/yellowgem.png" class=" img-fluid  img-thumbnail  " alt="Responsive image">
+                    </button>
+                    <button id="button4" class="btn btn-primary">
+                        <img src="assets/images/greengem.png" class=" img-fluid  img-thumbnail  " alt="Responsive image">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <h2 class=" replica text-center btn btn-success mt-2"></h2> -->
+    <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>

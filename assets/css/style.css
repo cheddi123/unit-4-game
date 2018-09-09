@@ -4,5 +4,17 @@ img{
 }
 
 body{
-    background-image: url("https://images.unsplash.com/photo-1478207820126-2b0217b53ed1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=55f95b73312696b9c0ebf968dccf81a4&auto=format&fit=crop&w=634&q=80")
+    background-image: url("https://t00.deviantart.net/NiDPmBY4OrzUcrDpx9SqZx_vTFo=/fit-in/500x250/filters:fixed_height(100,100):origin()/pre00/6c6f/th/pre/i/2010/347/0/f/bejeweled_3_wallpaper__1_by_zombifier25-d34smgr.jpg");
+    background-repeat: repeat;
+    background-size:100%;
+    
+}
+
+.buttonClass{
+    display: inline;
+    /* width: 30px;
+    height: 40px; */
+    color: blue;
+    margin: 5px;
+    border: 1px solid red;
 }

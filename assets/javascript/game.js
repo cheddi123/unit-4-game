@@ -17,7 +17,7 @@ function initializer(){
    $("#score").text(score);
 //    $("#totalWins").text(wins);
 //    $("#totalLosses").text(losses);
-   ranNumber=Math.floor(Math.random()*110)+19;
+   ranNumber=Math.floor(Math.random()*101)+19;
    console.log(ranNumber);
 
    $("#computerRanNumber").text(ranNumber);
@@ -50,8 +50,10 @@ $(".button button").on("click",function(){
             console.log(score);
          }
         
-        else if  (score === ranNumber) {
+        else if (score === ranNumber) {
+            
             wins++;
+            $("#score").text(score);
             $("#totalWins").text(wins);
             alert("Congratulations, you reached the target number");
             initializer();
@@ -69,10 +71,33 @@ $(".button button").on("click",function(){
     
     })
 
-  
+//   for(var i=0; i<10;i++){
+//       var butt = $("<h2>");
+//       $(butt).text("hello "+i );
+//       $(butt).addClass("buttonClass")
+//       $(butt).attr("val", Math.floor(Math.random()*10));
+//       $(".replica").append(butt);
+//       console.log("yes")
 
+//   }
 
+//   $(".buttonClass").on("click", function(){
+//       console.log($(this).attr("val"));
+//   })
+// function loop(){
+//   for (var i=0; i<10; i++) {
 
+//     var button = $("<button>")
+//     $(button).addClass("buttonClass")
+//     $(button).attr("value", Math.floor((Math.random() * 10) + 1))
+//     $("#replica").append(button)
 
+//   }
+
+//   $(".buttonClass").on( "click", function() {
+//     console.log($(this).attr("value"))
+//   });
+// }
+// loop();
 initializer();
 
