@@ -10,20 +10,18 @@ var buttonNumber;
 
 
 function initializer() {
-    //    wins=0;
-    //    losses=0;
+  
     score = 0;
 
     $("#score").text(score);
-    //    $("#totalWins").text(wins);
-    //    $("#totalLosses").text(losses);
+   // random number generator between 19 and 102
     ranNumber = Math.floor(Math.random() * 102) + 19;
     console.log(ranNumber);
 
     // this displays the random number
     $("#computerRanNumber").text(ranNumber);
 
-    // 4 random number is assigned to each crystal
+    // 4 random numbers are  assigned to each crystal between 1 to 11
     buttonNumber = Math.floor(Math.random() * 12) + 1;
     console.log(buttonNumber);
     $("#button1").val(buttonNumber)
@@ -59,12 +57,16 @@ $(".button button").on("click", function () {
         $("#totalWins").text(wins);
         alert("Congratulations, you reached the target number");
         initializer();
-
+       
+      
+        
     }
 
     else {
         losses++;
         $("#totalLosses").text(losses);
+        alert(" Sorry you loss, try  again")
+
 
         initializer();
 
@@ -72,6 +74,13 @@ $(".button button").on("click", function () {
 
 
 })
+
+
+initializer();
+
+
+
+
 
 //   for(var i=0; i<10;i++){
 //       var butt = $("<h2>");
@@ -101,5 +110,5 @@ $(".button button").on("click", function () {
 //   });
 // }
 // loop();
-initializer();
+
 

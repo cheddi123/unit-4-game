@@ -18,3 +18,16 @@ body{
     margin: 5px;
     border: 1px solid red;
 }
+
+@keyframes example {
+    0%   {background-color: teal;}
+    25%  {background-color:rgb(211, 34, 34);}
+    50%  {background-color:teal;}
+    100% {background-color:white;}
+}
+
+.header{
+    animation-name: example;
+    animation-duration: 2s;
+
+}
